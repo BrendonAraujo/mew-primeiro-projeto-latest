@@ -24,4 +24,20 @@ export class TemplateBindingComponent {
   public sum(firstValue : number, secondNumber : number){
     return firstValue + secondNumber;
   }
+
+  public sumAge(){
+    this.age++;
+  }
+
+  public SubAge(){
+    this.age--;
+  }
+
+  public onkeyDown(event : Event){
+    return console.log(event);
+  }
+
+  public onMouseEvent(event : MouseEvent){
+    return console.log(event.clientX);
+  }
 }

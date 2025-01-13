@@ -17,3 +17,14 @@
 <h2>Class and Style Binding</h2>
 <p [class.background-red]="age === 23"> {{name}} - {{age > 12}}</p>
 <p [style.text-decoration]="isTextDecotation">Minha idade é {{ age}}</p>
+
+<h2>Event Binding</h2>
+<button (click)="sumAge()"> Increase Age </button>
+<button (click)="SubAge()"> Decrease Age </button>
+<input (keydown.shift.t)="onkeyDown($event)"/>
+<br>
+<br>
+<div 
+    (mousemove)="onMouseEvent($event)"
+    style="background: red !important; width: 300px !important; height: 300px !important; margin-top: 10px !important;">
+</div>
