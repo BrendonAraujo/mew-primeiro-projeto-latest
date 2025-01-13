@@ -13,3 +13,7 @@
 
 <h2>Attribute Binding</h2>
 <p [attr.title]="name" [attr.aria-label]="name">Brendon Araújo</p>
+
+<h2>Class and Style Binding</h2>
+<p [class.background-red]="age === 23"> {{name}} - {{age > 12}}</p>
+<p [style.text-decoration]="isTextDecotation">Minha idade é {{ age}}</p>

@@ -11,6 +11,7 @@ export class TemplateBindingComponent {
   public name : string = "Brendon Araújo";
   public age : number = 23;
   public isDisable : boolean = true;
+  public isTextDecotation = this.age >= 23 ? 'underline' : 'none';
   public srcValue : string = "https://yt3.googleusercontent.com/4z0oRVDPoyuGeYAXx4ctU1xAoVSdrqtENmIoWQZSd4MQJkizoMVsOdoN5_Qp9n0duQXsFo_w=s160-c-k-c0x00ffffff-no-rj";
   public imgName : string = "image"
 
