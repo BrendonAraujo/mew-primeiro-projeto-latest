@@ -33,3 +33,10 @@
 <input [(ngModel)]="name"/>
 
 {{name}}
+
+<h3>Attributes Directives</h3>
+<div [ngClass]="{'background-red': isDisable}">Conditional Class</div>
+
+<div [ngStyle]="{
+    color: age >= 18 ? 'green' : 'red'
+}">Dynamic Style</div>
