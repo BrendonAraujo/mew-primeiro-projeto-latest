@@ -1,12 +1,27 @@
 <h2>Control Flow</h2>
 <h3>IF</h3>
-
 <button (click)="booleanChange()">Change</button>
-
-@if( isTrue ){
+@if( isTrue )
+{
     <p>Yes, 1 == 1 </p>
-}@else {
+}
+@else 
+{
     <p>No, it is worng</p>
 }
+<p *ngIf="isTrue">This is an old type of if</p>
 
-<p *ngIf="isTrue">This is an old type of if</p>>
+<h3>FOR</h3>
+<ul>
+    @for(item of data; track item) 
+    {
+        <li>{{item}}</li>
+    }
+</ul>
+
+<ul>
+    <ng-container>
+        <li *ngFor="let item of data">{{item}}</li>
+    </ng-container>
+</ul>
+
