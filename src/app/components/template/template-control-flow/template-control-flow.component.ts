@@ -11,6 +11,7 @@ import { delay, Observable, of } from 'rxjs';
 })
 export class TemplateControlFlowComponent {
   public isTrue : boolean =  true;
+  public numberForTestOnSwitchCase : number = 0;
 
   public data : string[] = [
     'First Item',
@@ -35,6 +36,10 @@ export class TemplateControlFlowComponent {
   public booleanChange(){
     this.isTrue = !this.isTrue;
   }
+
+  public changeNumber(){
+    this.numberForTestOnSwitchCase = Math.random();
+  }
 }
 
 class Person {
@@ -46,3 +51,4 @@ class Person {
   public id : string = '';
   public name : string = '';
 }
+

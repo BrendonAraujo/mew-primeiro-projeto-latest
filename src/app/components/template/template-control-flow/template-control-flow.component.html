@@ -58,3 +58,25 @@
 
 <input #name type="text"/>
 <button (click)="addNewName(name.value)">Add New</button>
+
+
+<h3>SWITCH CASE</h3>
+
+<button (click)="changeNumber()">Change Nuber</button>
+<p>
+The number {{numberForTestOnSwitchCase}} 
+@switch (numberForTestOnSwitchCase) 
+{
+    @case (0) 
+    {
+         is 0
+    }
+    @case((5))
+    {
+        is 5
+    }
+    @default {
+       is not 0 and also is not 5
+    }
+}
+</p>
