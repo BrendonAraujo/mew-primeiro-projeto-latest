@@ -1,6 +1,17 @@
 <h2>Deferrable Views Components</h2>
 
-@defer () 
+
+<!-- idle estado nativo -->
+<!-- timer(1000ms) carrega depois de um tempo -->
+<!-- viewport só carrega quando o scrool chegar na posicao onde está o objeto-->
+<!-- interaction só carrega quando ouver uma interação com objeto
+ no interection pode ser qualquer objeto do HTML, posso usar #nomeObjeto para marcar o objeto 
+ que vai ser usado na interação.
+-->
+<!-- hover quando passa por cima do objeto -->
+<!-- immediate assim que acabar o carregamento -->
+<!-- prefetch define onde será carregado, assim posso carregar sem mostrar -->
+@defer (on interaction; prefetch on idle) 
 {
     <app-template-binding/>
 }
