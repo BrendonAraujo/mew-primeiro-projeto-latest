@@ -19,12 +19,12 @@ export class TemplateControlFlowComponent {
   ];
 
   public dataWithObject : Person[] = [
-    new Person('1', 'Brendon Araújo'),
-    new Person('2', 'Ana Roger'),
-    new Person('3', 'Ana Carolina'),
-    new Person('4', 'Nicole Ewelyn'),
-    new Person('5', 'Analú Zafrin'),
-    new Person('6', 'Yasmin Saturnino'),
+    // new Person('1', 'Brendon Araújo'),
+    // new Person('2', 'Ana Roger'),
+    // new Person('3', 'Ana Carolina'),
+    // new Person('4', 'Nicole Ewelyn'),
+    // new Person('5', 'Analú Zafrin'),
+    // new Person('6', 'Yasmin Saturnino'),
   ];
 
   public addNewName(name : string){
