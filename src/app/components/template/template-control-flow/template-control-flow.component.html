@@ -25,3 +25,32 @@
     </ng-container>
 </ul>
 
+<h3>FOR With Objects</h3>
+
+<ul>
+    @for(
+        item of dataWithObject;
+        let i = $index;
+        let c = $count; 
+        let f = $first; 
+        let l = $last; 
+        let e = $even; 
+        let o = $odd; 
+        track item.id) 
+    {
+        <li>
+            {{item.id}} - {{item.name}}
+            <p> 
+                index {{i}}
+                count {{c}}
+                first {{f}}
+                last {{l}}
+                even {{e}}
+                odd {{o}}
+            </p>
+        </li>
+    }
+</ul>
+
+<input #name type="text"/>
+<button (click)="addNewName(name.value)">Add New</button>

@@ -18,7 +18,31 @@ export class TemplateControlFlowComponent {
     'Third Item'
   ];
 
+  public dataWithObject : Person[] = [
+    new Person('1', 'Brendon Araújo'),
+    new Person('2', 'Ana Roger'),
+    new Person('3', 'Ana Carolina'),
+    new Person('4', 'Nicole Ewelyn'),
+    new Person('5', 'Analú Zafrin'),
+    new Person('6', 'Yasmin Saturnino'),
+  ];
+
+  public addNewName(name : string){
+    let index = (this.dataWithObject.length + 1).toString();
+    this.dataWithObject.push(new Person (index, name))
+  }
+
   public booleanChange(){
     this.isTrue = !this.isTrue;
   }
+}
+
+class Person {
+  constructor(id : string, name:string){
+    this.id = id;
+    this.name = name
+  }
+
+  public id : string = '';
+  public name : string = '';
 }
