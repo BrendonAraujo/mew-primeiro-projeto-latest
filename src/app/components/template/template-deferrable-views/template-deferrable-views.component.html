@@ -11,7 +11,9 @@
 <!-- hover quando passa por cima do objeto -->
 <!-- immediate assim que acabar o carregamento -->
 <!-- prefetch define onde será carregado, assim posso carregar sem mostrar -->
-@defer (on interaction; prefetch on idle) 
+<!-- @defer (on interaction; prefetch on idle)  -->
+<button (click)="isTrue = true">Active Defer</button>
+@defer (when isTrue) 
 {
     <app-template-binding/>
 }

@@ -9,5 +9,5 @@ import { TemplateBindingComponent } from "../template-binding/template-binding.c
   styleUrl: './template-deferrable-views.component.scss'
 })
 export class TemplateDeferrableViewsComponent {
-
+  public isTrue : boolean = false;
 }
